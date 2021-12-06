@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Speak Text 2021</title>
+</head>
+<body class="bg-green-50 text-green">
+    <div class="container text-center">
+        <div class="flex justify-center mb-10">
+            <img src="../public/Images/microphone.jpg" alt="" class="mb-5">
+        </div>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form class="mb-5">
+                    <div class="form-group">
+                        <textarea id="text-input" cols="50" rows="5" class="form-control-lg form-control-lg" placeholder="Paste or type your text here..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div id="rate-value" class="badge badge-primary float-right">1</div>
+                        <label for="rate">Rate</label>
+                        <input type="range" id="rate" class="custom-range" min="0.5" max="2" value="1" step="0.1">
+                    </div>
+                    <div class="form-group">
+                        <div id="pitch-value" class="badge badge-primary float-right">1</div>
+                        <label for="pitch">Pitch</label>
+                        <input type="range" class="custom-range" min="0" max="2" value="1" step="0.1" id="pitch">
+                    </div>
+                    <div class="form-group">
+                        <select id="voice-select" class="form-control form-control-lg"></select>
+                    </div>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-5">Speak It</button>
+                </form>
+                <p class="text-secondary">Paste or enter some text in the input above and press Speak It to hear it. Change the voices using the dropdown menu.<br/>Note: In this web, I use the Web Speech API and it may not work in some browsers</p>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

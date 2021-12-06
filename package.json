@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "tailwindcss": "^2.2.19"
+  }, 
+  "scripts": {
+    "build:tailwind": "tailwindcss build src/style.css -o public/style.css", 
+    "prestart": "npm run build:tailwind", 
+    "prebuild": "npm run build:tailwind", 
+    "start": "tsc --w"
+  }
+}
