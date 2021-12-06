@@ -1,2 +1,2 @@
-# Speak Text
- In this project, I will be building a web application where the text can be played and spoken in various languages. 
+# Speak text
+ In this app, I will be creating a web-application, where a text can be typed/pasted to hear and read it loudly. Note: This web speech api may not be compitable with some web browsers. 
