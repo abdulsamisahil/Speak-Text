@@ -1,42 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> 
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Speak Text 2021</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-green-50 text-green">
-    <div class="container text-center">
-        <div class="flex justify-center mb-10">
-            <img src="../public/Images/microphone.jpg" alt="" class="mb-5">
+<body>
+
+<div class="header">
+  <h1>Speak IT</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li>Used Dev-tools</li>
+      <li>Web Speech API</li>
+      <li>Typescript</li>
+      <li>Html</li>
+      <li>Simple CSS</li>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9">
+    <h1>Welcome</h1>
+    <form class="mb-5">
+        <div class="form-group">
+            <textarea id="text-input" cols="50" rows="5" placeholder="Paste or type your text here..."></textarea>
         </div>
-        <div class="row">
-            <div class="col-md-6 mx-auto">
-                <form class="mb-5">
-                    <div class="form-group">
-                        <textarea id="text-input" cols="50" rows="5" class="form-control-lg form-control-lg" placeholder="Paste or type your text here..."></textarea>
-                    </div>
-                    <div class="form-group">
-                        <div id="rate-value" class="badge badge-primary float-right">1</div>
-                        <label for="rate">Rate</label>
-                        <input type="range" id="rate" class="custom-range" min="0.5" max="2" value="1" step="0.1">
-                    </div>
-                    <div class="form-group">
-                        <div id="pitch-value" class="badge badge-primary float-right">1</div>
-                        <label for="pitch">Pitch</label>
-                        <input type="range" class="custom-range" min="0" max="2" value="1" step="0.1" id="pitch">
-                    </div>
-                    <div class="form-group">
-                        <select id="voice-select" class="form-control form-control-lg"></select>
-                    </div>
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-5">Speak It</button>
-                </form>
-                <p class="text-secondary">Paste or enter some text in the input above and press Speak It to hear it. Change the voices using the dropdown menu.<br/>Note: In this web, I use the Web Speech API and it may not work in some browsers</p>
-            </div>
+        <div class="form-group">
+            <div id="rate-value">1</div>
+            <label for="rate">Rate</label>
+            <input type="range" id="rate" min="0.5" max="2" value="1" step="0.1">
         </div>
+        <div class="form-group">
+            <div id="pitch-value">1</div>
+            <label for="pitch">Pitch</label>
+            <input type="range" min="0" max="2" value="1" step="0.1" id="pitch">
+        </div>
+        <div class="form-group">
+            <select id="voice-select"></select>
+        </div>
+        <button class="btn">Speak It</button>
+    </form>
+  </div>
+
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>Web Speech API?</h2>
+      <p>It is a free API to use, here are various types of voices the speak the text</p>
+      <h2>Web browser dependency?</h2>
+      <p>It may not work in some browsers, like internet explorer</p>
     </div>
-    <script src="./index.js"></script>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Paste or enter some text in the input above and press Speak It to hear it. Change the voices using the dropdown menu.</p>
+</div>
+<script src="./index.js"></script>
 </body>
 </html>
