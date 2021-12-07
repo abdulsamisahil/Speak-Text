@@ -21,6 +21,7 @@
     background-color: #9933cc;
     color: #ffffff;
     padding: 15px;
+    border-radius: 12px;
   }
   
   .menu ul {
@@ -58,6 +59,7 @@
     text-align: center;
     font-size: 12px;
     padding: 15px;
+    border-radius: 12px;
   }
   .btn{
       background-color: #0099cc;
